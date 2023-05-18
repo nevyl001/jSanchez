@@ -6,7 +6,7 @@
     z-index: 999
     font-weight: 900
     font-size: 32px
-    padding: 10px 20px
+    padding: 20px 50px
     display: flex
     justify-content: space-between
     font-style: italic
@@ -15,6 +15,7 @@
         cursor: pointer
     
 .header
+    text-align: center
     position: fixed
     padding-top: 100px
     width: 95%
@@ -37,15 +38,65 @@
         &:hover
             transform: scale(1.05)
             transition-duration: 1s
+
+
+
+    .frase
+        text-align: center
+        position: relative
+        background-color: var(--color-primario)
+        z-index: 110
+        margin-top: -200px
+        padding: 100px 50px 75px 50px
+
+
     .historia
+        align-items: top
+        text-align: center
+        justify-content: center
+        display: flex
+        position: relative
+        gap: 50px
+        background-color: var(--color-primario)
+        z-index: 100
+        margin-top: -200px
+        padding: 200px 50px
+
+
+    .historia .text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: top
+        text-align: left
+
+    .historia .box_left p
+        padding: 5px 0
+
+    .historia .box_right .clubs
+        align-items: center 
+        justify-content: space-between
+        display: flex
+        padding: 5px 0
+
+    .palmares
+        text-align: center
         position: relative
         background-color: var(--color-primario)
         z-index: 100
-        margin-top: -100px
-        padding: 200px 40px
+        margin-top: -200px
+        padding: 150px 50px
+        .club
+            margin: 0 auto
+            align-items: center
+            justify-content: space-between
+            display: flex
+            width: 80%
+            padding: 10px 0
+            
     .prensa
         background-color: var(--color-primario)
-        padding: 200px 40px
+        padding: 100px 50px
     .gallery
         background-color: var(--color-primario)
         margin: 40px 0
@@ -63,9 +114,19 @@
             .photo
                 border-radius: 64px
                 overflow: hidden
+
+
     .contacto
+        text-align: center
+        justify-content: center
+        display: flex
+        gap: 50px
         background-color: var(--color-primario)
-        padding: 100px 40px
+        padding: 50px 40px
+        .linksre
+            padding: 20px 0
+            display: flex
+            gap: 50px
         button
             background-color: white
             margin: 20px 0
@@ -75,7 +136,9 @@
             text-transform: uppercase
             font-style: italic
             border-radius: 32px
+        
     footer
+        background-color: var(--color-primario)
         text-align: center
         padding: 20px
 

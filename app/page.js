@@ -16,10 +16,19 @@ export default function Home() {
           HOME
         </div>
         <div className={styles.link} onClick={() => goToSection("historia")}>
-          HISTORIA
+          BIO
+        </div>
+        <div className={styles.link} onClick={() => goToSection("home")}>
+          <Image
+            src="/img/log1.png"
+            width={60}
+            height={80}
+            alt="Jorge Sanchez"
+            className={styles.image}
+          />
         </div>
         <div className={styles.link} onClick={() => goToSection("prensa")}>
-          PRENSA
+          GALERIA
         </div>
         <div className={styles.link} onClick={() => goToSection("contacto")}>
           CONTACTO
@@ -57,6 +66,20 @@ export default function Home() {
             />
           </section>
         </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true }}
+        >
+          <section className={styles.frase}>
+            <h3>
+              “EL FÚTBOL ES UN JUEGO QUE SE JUEGA CON EL CEREBRO. DEBES ESTAR EN
+              EL LUGAR ADECUADO, EN EL MOMENTO ADECUADO. NI DEMASIADO PRONTO NI
+              DEMASIADO TARDE.” - Johan Cruyff
+            </h3>
+          </section>
+        </motion.div>
         <section className={styles.historia} id="historia">
           <motion.div
             initial={{ opacity: 0 }}
@@ -64,24 +87,132 @@ export default function Home() {
             transition={{ duration: 1.5 }}
             viewport={{ once: true }}
           >
-            <h2>HISTORIA</h2>
-            <p>
-              Do laborum esse est ipsum velit sunt proident pariatur culpa
-              exercitation excepteur dolor irure. Duis exercitation amet tempor
-              exercitation anim ullamco nisi adipisicing.
-            </p>
-            <p>
-              Deserunt ipsum nulla aute dolor et nulla aute sit labore occaecat
-              esse. Tempor elit in culpa adipisicing reprehenderit dolore aliqua
-              excepteur dolor ex tempor fugiat amet. Officia do quis ipsum est
-              et tempor.
-            </p>
-            <p>
-              Incididunt minim qui non nulla reprehenderit Lorem sint culpa
-              aute. Culpa amet veniam pariatur cillum nisi laborum eu consequat.
-            </p>
+            <div className={styles.box_left}>
+              <h2>BIO</h2>
+              <div className={styles.text}>
+                <p>Fecha de nacimiento: 10 de diciembre, 1997</p>
+                <p>Lugar de nacimiento: Torreón, Coahuila</p>
+                <p>Estatura: 1.75 m</p>
+                <p>Posición: Lateral Derecho</p>
+                <p>Número: 19</p>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+          >
+            <div className={styles.box_right}>
+              <h2>CLUBES</h2>
+              <div className={styles.text}>
+                <div className={styles.clubs}>
+                  <div className={styles.name}>
+                    <p>Santos Laguna: 2016-2018</p>
+                  </div>
+                  <div className={styles.logo}>
+                    <Image
+                      src="/img/san.png"
+                      width={50}
+                      height={100}
+                      alt="santos"
+                    />
+                  </div>
+                </div>
+                <div className={styles.clubs}>
+                  <div className={styles.name}>
+                    <p>Club América: 2018-2022</p>
+                  </div>
+                  <div className={styles.logo}>
+                    <Image
+                      src="/img/ame.png"
+                      width={50}
+                      height={100}
+                      alt="ame"
+                    />
+                  </div>
+                </div>
+                <div className={styles.clubs}>
+                  <div className={styles.name}>
+                    <p>Ajax FC: 2022-</p>
+                  </div>
+                  <div className={styles.logo}>
+                    <Image
+                      src="/img/ajax.png"
+                      width={50}
+                      height={100}
+                      alt="ajax"
+                    />
+                  </div>
+                </div>
+                <div className={styles.clubs}>
+                  <div className={styles.name}>
+                    <p>Selección Nacional: 2019-</p>
+                  </div>
+                  <div className={styles.logo}>
+                    <Image src="/img/sm.png" width={50} height={100} alt="sm" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </section>
+        <section className={styles.palmares}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+          >
+            <div className={styles.title}>
+              <h2>PALMARES</h2>
+            </div>
+            <div className={styles.club}>
+              <div className={styles.titulo}>
+                <p>Campeón Clausura 2018 Liga MX (Santos Laguna)</p>
+              </div>
+              <div className={styles.copa}>
+                <Image src="/img/lmx.png" width={60} height={100} alt="sm" />
+              </div>
+            </div>
+            <div className={styles.club}>
+              <div className={styles.titulo}>
+                <p>Campeón Apertura 2018 Liga MX (Club América)</p>
+              </div>
+              <div className={styles.copa}>
+                <Image src="/img/lmx2.png" width={70} height={100} alt="sm" />
+              </div>
+            </div>
+            <div className={styles.club}>
+              <div className={styles.titulo}>
+                <p>Campeón Copa MX 2019</p>
+              </div>
+              <div className={styles.copa}>
+                <Image src="/img/cmx.png" width={70} height={100} alt="sm" />
+              </div>
+            </div>
+            <div className={styles.club}>
+              <div className={styles.titulo}>
+                <p>Campeón de Campeones 2019</p>
+              </div>
+              <div className={styles.copa}>
+                <Image src="/img/cc.png" width={100} height={100} alt="sm" />
+              </div>
+            </div>
+            <div className={styles.club}>
+              <div className={styles.titulo}>
+                <p>
+                  Medalla Bronce JJOO Tokio 2021 (Selección Nacional Sub 23)
+                </p>
+              </div>
+              <div className={styles.copa}>
+                <Image src="/img/tok.png" width={50} height={100} alt="sm" />
+              </div>
+            </div>
+          </motion.div>
+        </section>
+
         <section className={styles.prensa} id="prensa">
           <motion.div
             initial={{ opacity: 0 }}
@@ -89,11 +220,7 @@ export default function Home() {
             transition={{ duration: 1.5 }}
             viewport={{ once: true }}
           >
-            <h2>PRENSA</h2>
-            <p>
-              Deserunt magna Lorem minim sunt amet aliqua consectetur
-              consectetur culpa sit eiusmod.
-            </p>
+            <h2>GALERIA</h2>
           </motion.div>
           <div className={styles.gallery}>
             <motion.div
@@ -176,21 +303,40 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <section className={styles.contacto} id="contacto">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1.5 }}
-            viewport={{ once: true }}
-          >
+          <div className={styles.left}>
+            <div className={styles.title}>
+              <h2>REDES</h2>
+            </div>
+            <div className={styles.linksre}>
+              <Link href="www.facebook.com/Sanchez-Jorgie-111292158098168/?ref=page_internal ">
+                <Image
+                  src="/img/fa.svg"
+                  width={100}
+                  height={150}
+                  alt="facebook"
+                />
+              </Link>
+              <Link href="www.twitch.tv/jorgie_sanchez">
+                <Image src="/img/tw.svg" width={100} height={150} alt="tw" />
+              </Link>
+              <Link href="www.instagram.com/sanchezjorgie4">
+                <Image src="/img/ins.svg" width={100} height={150} alt="ins" />
+              </Link>
+              <Link href="www.tiktok.com/@sanchezjorgie4 ">
+                <Image src="/img/tikt.svg" width={100} height={150} alt="tt" />
+              </Link>
+            </div>
+          </div>
+          <div className={styles.right}>
             <h2>CONTACTO</h2>
-            <p>Cupidatat sint nisi minim occaecat.</p>
-            <Link href="mailto:christiancastellanosmx@gmail.com">
-              <button>jorge.mgmt@boldtalent.mx</button>
+            <Link href="mailto:contacto@jorgesanchez4.com">
+              <button>contacto@jorgesanchez4.com</button>
             </Link>
-          </motion.div>
+          </div>
         </section>
-        <footer>Jorge Sanchez 2013 @ Todos los derechos reservados.</footer>
+        <footer>Jorge Sanchez 2023 @ Todos los derechos reservados.</footer>
       </main>
     </>
   );
