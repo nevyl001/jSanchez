@@ -13,12 +13,6 @@ export default function Home() {
     <>
       <nav className={styles.navDesktop}>
         <div className={styles.link} onClick={() => goToSection("home")}>
-          HOME
-        </div>
-        <div className={styles.link} onClick={() => goToSection("historia")}>
-          BIO
-        </div>
-        <div className={styles.link} onClick={() => goToSection("home")}>
           <Image
             src="/img/log1.png"
             width={60}
@@ -27,6 +21,13 @@ export default function Home() {
             className={styles.image}
           />
         </div>
+        <div className={styles.link} onClick={() => goToSection("home")}>
+          HOME
+        </div>
+        <div className={styles.link} onClick={() => goToSection("historia")}>
+          BIO
+        </div>
+
         <div className={styles.link} onClick={() => goToSection("prensa")}>
           GALERIA
         </div>
