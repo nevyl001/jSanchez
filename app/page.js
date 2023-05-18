@@ -81,13 +81,13 @@ export default function Home() {
           </section>
         </motion.div>
         <section className={styles.historia} id="historia">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1.5 }}
-            viewport={{ once: true }}
-          >
-            <div className={styles.box_left}>
+          <div className={styles.box_left}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1.5 }}
+              viewport={{ once: true }}
+            >
               <h2>BIO</h2>
               <div className={styles.text}>
                 <p>Fecha de nacimiento: 10 de diciembre, 1997</p>
@@ -96,15 +96,16 @@ export default function Home() {
                 <p>Posición: Lateral Derecho</p>
                 <p>Número: 19</p>
               </div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1.5 }}
-            viewport={{ once: true }}
-          >
-            <div className={styles.box_right}>
+            </motion.div>
+          </div>
+
+          <div className={styles.box_right}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1.5 }}
+              viewport={{ once: true }}
+            >
               <h2>CLUBES</h2>
               <div className={styles.text}>
                 <div className={styles.clubs}>
@@ -155,8 +156,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </section>
         <section className={styles.palmares}>
           <motion.div
@@ -197,7 +198,7 @@ export default function Home() {
                 <p>Campeón de Campeones 2019</p>
               </div>
               <div className={styles.copa}>
-                <Image src="/img/cc.png" width={100} height={100} alt="sm" />
+                <Image src="/img/cc.png" width={110} height={100} alt="sm" />
               </div>
             </div>
             <div className={styles.club}>
