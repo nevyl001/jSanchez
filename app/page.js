@@ -175,7 +175,7 @@ export default function Home() {
                 <p>Campeón Clausura 2018 Liga MX (Santos Laguna)</p>
               </div>
               <div className={styles.copa}>
-                <Image src="/img/lmx.png" width={60} height={100} alt="sm" />
+                <Image src="/img/lmx.png" width={70} height={100} alt="sm" />
               </div>
             </div>
             <div className={styles.club}>
@@ -183,7 +183,7 @@ export default function Home() {
                 <p>Campeón Apertura 2018 Liga MX (Club América)</p>
               </div>
               <div className={styles.copa}>
-                <Image src="/img/lmx2.png" width={70} height={100} alt="sm" />
+                <Image src="/img/lmx2.png" width={80} height={100} alt="sm" />
               </div>
             </div>
             <div className={styles.club}>
@@ -191,7 +191,7 @@ export default function Home() {
                 <p>Campeón Copa MX 2019</p>
               </div>
               <div className={styles.copa}>
-                <Image src="/img/cmx.png" width={70} height={100} alt="sm" />
+                <Image src="/img/cmx.png" width={75} height={100} alt="sm" />
               </div>
             </div>
             <div className={styles.club}>
@@ -199,7 +199,7 @@ export default function Home() {
                 <p>Campeón de Campeones 2019</p>
               </div>
               <div className={styles.copa}>
-                <Image src="/img/cc.png" width={110} height={100} alt="sm" />
+                <Image src="/img/ccn.png" width={70} height={100} alt="sm" />
               </div>
             </div>
             <div className={styles.club}>
@@ -209,7 +209,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.copa}>
-                <Image src="/img/tok.png" width={50} height={100} alt="sm" />
+                <Image src="/img/tok.png" width={60} height={100} alt="sm" />
               </div>
             </div>
           </motion.div>
@@ -303,7 +303,92 @@ export default function Home() {
                 </motion.div>
               </div>
             </div>
+            <div className={styles.pho2}>
+              <div className={styles.photos}>
+                <div className={styles.photo}>
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <Image
+                      src="/img/n1.png"
+                      width={1920}
+                      height={1080}
+                      alt="Jorge Sanchez - Galeria"
+                    />
+                  </motion.div>
+                </div>
+                <div className={styles.photo}>
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1.5, delay: 0.3 }}
+                    viewport={{ once: true }}
+                  >
+                    <Image
+                      src="/img/n2.png"
+                      width={1920}
+                      height={1080}
+                      alt="Jorge Sanchez - Galeria"
+                    />
+                  </motion.div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.pho3}>
+              <div className={styles.photos}>
+                <div className={styles.photo}>
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1.5, delay: 0.6 }}
+                    viewport={{ once: true }}
+                  >
+                    <Image
+                      src="/img/n3.png"
+                      width={1920}
+                      height={1080}
+                      alt="Jorge Sanchez"
+                    />
+                  </motion.div>
+                </div>
+                <div className={styles.photo}>
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1.5, delay: 0.9 }}
+                    viewport={{ once: true }}
+                  >
+                    <Image
+                      src="/img/n4.png"
+                      width={1920}
+                      height={1080}
+                      alt="Jorge Sanchez"
+                    />
+                  </motion.div>
+                </div>
+              </div>
+            </div>
           </div>
+        </section>
+        <section className={styles.imgnike}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+          >
+            <div className={styles.imgprin}>
+              <Image
+                src="/img/nikimg.png"
+                width={1920}
+                height={1080}
+                alt="Jorge Sanchez - Galeria"
+              />
+            </div>
+          </motion.div>
         </section>
 
         <section className={styles.contacto} id="contacto">
@@ -312,7 +397,10 @@ export default function Home() {
               <h2>REDES</h2>
             </div>
             <div className={styles.linksre}>
-              <Link href="www.facebook.com/Sanchez-Jorgie-111292158098168/?ref=page_internal ">
+              <Link
+                href="https://www.facebook.com/Sanchez-Jorgie-111292158098168/?ref=page_internal"
+                target="_blank"
+              >
                 <Image
                   src="/img/fa.svg"
                   width={100}
@@ -320,13 +408,19 @@ export default function Home() {
                   alt="facebook"
                 />
               </Link>
-              <Link href="www.twitch.tv/jorgie_sanchez">
+              <Link href="https://www.twitch.tv/jorgie_sanchez" target="_blank">
                 <Image src="/img/tw.svg" width={100} height={150} alt="tw" />
               </Link>
-              <Link href="www.instagram.com/sanchezjorgie4">
+              <Link
+                href="https://www.instagram.com/sanchezjorgie4/"
+                target="_blank"
+              >
                 <Image src="/img/ins.svg" width={100} height={150} alt="ins" />
               </Link>
-              <Link href="www.tiktok.com/@sanchezjorgie4 ">
+              <Link
+                href="https://www.tiktok.com/@sanchezjorgie4?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+              >
                 <Image src="/img/tikt.svg" width={100} height={150} alt="tt" />
               </Link>
             </div>
