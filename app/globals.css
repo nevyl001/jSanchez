@@ -164,6 +164,10 @@ body {
   transition-duration: 0.4s;
 }
 
+.palmares .hero-section {
+  padding: 50px 50px !important;
+}
+
 @media (max-width: 1000px) {
   h2 {
     font-weight: 900;

@@ -232,7 +232,7 @@ export default function Home() {
                   ></div>
                   <div className="card__content">
                     <p className="card__category">Liga MX</p>
-                    <p className="card__heading">Campeón Copa </p>
+                    <p className="card__heading">Campeón Copa</p>
                     <p className="card__heading">Club América</p>
                   </div>
                 </div>
@@ -257,7 +257,7 @@ export default function Home() {
                     style={{ backgroundImage: "url(/img/jstokio.png)" }}
                   ></div>
                   <div className="card__content">
-                    <p className="card__category">JJOO Tokio </p>
+                    <p className="card__category">JJOO Tokio</p>
                     <p className="card__heading">Medalla Bronce 2021</p>
                     <p className="card__heading">México</p>
                   </div>
