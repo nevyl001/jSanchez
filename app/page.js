@@ -197,7 +197,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2>Palmares</h2>
-            <div className="hero-section">
+            {/* <div className="hero-section">
               <div className="card-grid">
                 <div className="card">
                   <div
@@ -260,6 +260,73 @@ export default function Home() {
                     <p className="card__category">JJOO Tokio</p>
                     <p className="card__heading">Medalla Bronce 2021</p>
                     <p className="card__heading">México</p>
+                  </div>
+                </div>
+              </div>
+            </div> */}
+            <div className="hero-section">
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/jsantos.webp)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">Liga MX</p>
+                    <h3 className="card__heading">Campeón Clausura 2018</h3>
+                    <h3 className="card__heading">Santos FC</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/jsame.png)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">Liga MX</p>
+                    <h3 className="card__heading">Campeón Apertura 2018</h3>
+                    <h3 className="card__heading">Club América</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/jsajaxjue.png)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">Liga MX</p>
+                    <h3 className="card__heading">Campeón Copa</h3>
+                    <h3 className="card__heading">Club América</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/jsme.jpeg)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">Liga MX</p>
+                    <h3 className="card__heading">Campeón de Campeones 2019</h3>
+                    <h3 className="card__heading">Club América</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/jsme.jpeg)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">JJOO Tokio</p>
+                    <h3 className="card__heading">Medalla Bronce 2021</h3>
+                    <h3 className="card__heading">México</h3>
                   </div>
                 </div>
               </div>
