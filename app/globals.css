@@ -142,6 +142,7 @@ body {
   padding: var(--spacing-l) !important;
   position: absolute !important;
   top: 0 !important;
+  transition-duration: 0.4s;
 }
 
 .card__category {
@@ -158,10 +159,27 @@ body {
   line-height: 1.4 !important;
 }
 
+.card:hover .card__content {
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
 @media (max-width: 1000px) {
   h2 {
     font-weight: 900;
     font-style: italic;
     font-size: 64px;
+  }
+  .row2-container {
+    display: block;
+  }
+  .row1-container {
+    display: block;
+  }
+  .box-down {
+    top: auto;
+  }
+  .box {
+    width: auto;
   }
 }
