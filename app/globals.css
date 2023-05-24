@@ -10,6 +10,15 @@
   --background-end-rgb: 255, 255, 255;
   --color-primario: #121a1d;
   --color-primario-texto: #fff;
+  --background-dark: #2d3548;
+  --text-light: rgba(255, 255, 255, 0.6);
+  --text-lighter: rgba(255, 255, 255, 0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,10 +42,120 @@ h3 {
   font-style: italic;
   font-size: 40px;
 }
+h4 {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 25px;
+}
 
 body {
   background-color: var(--color-primario);
   color: var(--color-primario-texto);
+}
+.row2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row1-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  color: white;
+  background-color: #121a1d;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px;
+  border: 0.5px solid white;
+}
+.box p {
+  font-size: 20px !important;
+}
+
+.box-down {
+  position: relative;
+  top: 160px;
+}
+.box {
+  width: 25%;
+}
+
+.hero-section {
+  display: flex !important;
+  justify-content: center !important;
+  padding: 50px 100px;
+}
+
+.card-grid {
+  padding: 25px;
+  display: grid !important;
+  grid-template-columns: repeat(1, 10fr) !important;
+  grid-column-gap: var(--spacing-l) !important;
+  grid-row-gap: var(--spacing-l) !important;
+  max-width: var(--width-container) !important;
+  width: 100% !important;
+}
+
+.card {
+  position: relative !important;
+}
+
+.card:before {
+  content: "" !important;
+  display: block !important;
+  padding-bottom: 150% !important;
+  width: 100% !important;
+}
+
+.card__background {
+  background-size: cover !important;
+  background-position: center !important;
+  border-radius: var(--spacing-l) !important;
+  bottom: 0 !important;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85) !important;
+  left: 0 !important;
+  position: absolute !important;
+  right: 0 !important;
+  top: 0 !important;
+  transform-origin: center !important;
+  transition: filter 200ms linear, transform 200ms linear !important;
+}
+.card__background .card__content:hover p {
+  transition: filter 200ms linear, transform 200ms linear !important;
+  opacity: 0;
+}
+
+.card:hover .card__background {
+  filter: brightness(1) saturate(1.2) contrast(1) !important;
+  transform: scale(1.05) translateZ(0) !important;
+}
+
+.card-grid:hover > .card:not(:hover) .card__background {
+  filter: brightness(0.5) saturate(0) contrast(2.2) blur(20px) !important;
+}
+
+.card__content {
+  left: 0 !important;
+  padding: var(--spacing-l) !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.card__category {
+  color: var(--text-light) !important;
+  font-size: 0.9rem !important;
+  margin-bottom: var(--spacing-s) !important;
+  text-transform: uppercase !important;
+}
+
+.card__heading {
+  color: var(--text-lighter) !important;
+  font-size: 1.9rem !important;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2) !important;
+  line-height: 1.4 !important;
 }
 
 @media (max-width: 1000px) {
