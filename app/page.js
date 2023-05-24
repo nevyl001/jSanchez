@@ -82,84 +82,113 @@ export default function Home() {
           </section>
         </motion.div>
         <section className={styles.historia} id="historia">
-          <div className={styles.box_left}>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.5 }}
-              viewport={{ once: true }}
-            >
-              <h2>BIO</h2>
-              <div className={styles.text}>
-                <p>Fecha de nacimiento: 10 de diciembre, 1997</p>
-                <p>Lugar de nacimiento: Torreón, Coahuila</p>
-                <p>Estatura: 1.75 m</p>
-                <p>Posición: Lateral Derecho</p>
-                <p>Número: 19</p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+          >
+            <h2>BIO</h2>
+            <div class="row1-container">
+              <div class="box box-down">
+                <div class="title">
+                  <h4>Número:</h4>
+                </div>
+                <p>19</p>
               </div>
-            </motion.div>
-          </div>
-
-          <div className={styles.box_right}>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.5 }}
-              viewport={{ once: true }}
-            >
-              <h2>CLUBES</h2>
-              <div className={styles.text}>
-                <div className={styles.clubs}>
-                  <div className={styles.name}>
-                    <p>Santos Laguna: 2016-2018</p>
-                  </div>
-                  <div className={styles.logo}>
-                    <Image
-                      src="/img/san.png"
-                      width={50}
-                      height={100}
-                      alt="santos"
-                    />
-                  </div>
+              <div class="box red">
+                <div class="title">
+                  <h4>Lugar de nacimiento:</h4>
                 </div>
-                <div className={styles.clubs}>
-                  <div className={styles.name}>
-                    <p>Club América: 2018-2022</p>
-                  </div>
-                  <div className={styles.logo}>
-                    <Image
-                      src="/img/ame.png"
-                      width={50}
-                      height={100}
-                      alt="ame"
-                    />
-                  </div>
-                </div>
-                <div className={styles.clubs}>
-                  <div className={styles.name}>
-                    <p>Ajax FC: 2022-</p>
-                  </div>
-                  <div className={styles.logo}>
-                    <Image
-                      src="/img/ajax.png"
-                      width={50}
-                      height={100}
-                      alt="ajax"
-                    />
-                  </div>
-                </div>
-                <div className={styles.clubs}>
-                  <div className={styles.name}>
-                    <p>Selección Nacional: 2019-</p>
-                  </div>
-                  <div className={styles.logo}>
-                    <Image src="/img/sm.png" width={50} height={100} alt="sm" />
-                  </div>
-                </div>
+                <p>Torreón, Coahuila</p>
               </div>
-            </motion.div>
-          </div>
+              <div class="box box-down">
+                <div class="title">
+                  <h4>Posición:</h4>
+                </div>
+                <p>Lateral Derecho</p>
+              </div>
+            </div>
+            <div class="row2-container">
+              <div class="box">
+                <div class="title">
+                  <h4>Fecha de nacimiento:</h4>
+                </div>
+                <p>10 de diciembre, 1997</p>
+              </div>
+              <div class="box">
+                <div class="title">
+                  <h4>Estatura:</h4>
+                </div>
+                <p>1.75 m</p>
+              </div>
+            </div>
+          </motion.div>
         </section>
+
+        <section className={styles.clubs}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+          >
+            <h2>CLUBES</h2>
+            <div className="hero-section">
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/jsantos.webp)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">Liga MX</p>
+                    <h3 className="card__heading">Santos Laguna 2016-2018</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/jsame.png)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">Liga MX</p>
+                    <h3 className="card__heading">Club América 2018-2022</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/jsajaxjue.png)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">La Eredivisie</p>
+                    <h3 className="card__heading">Ajax FC</h3>
+                    <h3 className="card__heading">2022 -</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/jsme.jpeg)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">México</p>
+                    <h3 className="card__heading">Selección Nacional</h3>
+                    <h3 className="card__heading">2019 -</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </section>
+
         <section className={styles.palmares}>
           <motion.div
             initial={{ opacity: 0 }}
@@ -167,49 +196,72 @@ export default function Home() {
             transition={{ duration: 1.5 }}
             viewport={{ once: true }}
           >
-            <div className={styles.title}>
-              <h2>PALMARES</h2>
-            </div>
-            <div className={styles.club}>
-              <div className={styles.titulo}>
-                <p>Campeón Clausura 2018 Liga MX (Santos Laguna)</p>
+            <h2>Palmares</h2>
+            <div className="hero-section">
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/cmx.png)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">Liga MX</p>
+                    <p className="card__heading">Campeón Clausura 2018</p>
+                    <p className="card__heading">Santos Laguna</p>
+                  </div>
+                </div>
               </div>
-              <div className={styles.copa}>
-                <Image src="/img/lmx.png" width={70} height={100} alt="sm" />
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/lmx.png)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">Liga MX</p>
+                    <p className="card__heading">Campeón Apertura 2018</p>
+                    <p className="card__heading">Club América</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className={styles.club}>
-              <div className={styles.titulo}>
-                <p>Campeón Apertura 2018 Liga MX (Club América)</p>
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/ccn.png)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">Liga MX</p>
+                    <p className="card__heading">Campeón Copa </p>
+                    <p className="card__heading">Club América</p>
+                  </div>
+                </div>
               </div>
-              <div className={styles.copa}>
-                <Image src="/img/lmx2.png" width={80} height={100} alt="sm" />
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/lmx2.png)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">Liga MX</p>
+                    <p className="card__heading">Campeón de Campeones 2019</p>
+                    <p className="card__heading">Club América</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className={styles.club}>
-              <div className={styles.titulo}>
-                <p>Campeón Copa MX 2019</p>
-              </div>
-              <div className={styles.copa}>
-                <Image src="/img/cmx.png" width={75} height={100} alt="sm" />
-              </div>
-            </div>
-            <div className={styles.club}>
-              <div className={styles.titulo}>
-                <p>Campeón de Campeones 2019</p>
-              </div>
-              <div className={styles.copa}>
-                <Image src="/img/ccn.png" width={70} height={100} alt="sm" />
-              </div>
-            </div>
-            <div className={styles.club}>
-              <div className={styles.titulo}>
-                <p>
-                  Medalla Bronce JJOO Tokio 2021 (Selección Nacional Sub 23)
-                </p>
-              </div>
-              <div className={styles.copa}>
-                <Image src="/img/tok.png" width={60} height={100} alt="sm" />
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/jstokio.png)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">JJOO Tokio </p>
+                    <p className="card__heading">Medalla Bronce 2021</p>
+                    <p className="card__heading">México</p>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
