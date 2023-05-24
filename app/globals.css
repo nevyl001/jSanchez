@@ -183,10 +183,7 @@ body {
     width: auto;
   }
   .hero-section {
-    width: 75%;
-    margin: auto;
     display: block !important;
-
     padding: 10px 20px !important;
   }
 }
