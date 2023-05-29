@@ -43,9 +43,9 @@ export default function Home() {
         >
           <div className={styles.img}>
             <Image
-              src="/img/jorge-sanchez.png"
-              width={1532}
-              height={712}
+              src="/img/js2.png"
+              width={957}
+              height={456}
               alt="Jorge Sanchez"
               className={styles.image}
             />
