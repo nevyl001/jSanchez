@@ -216,7 +216,7 @@ export default function Home() {
                 <div className="card">
                   <div
                     className="card__background"
-                    style={{ backgroundImage: "url(/img/amecapcc.jpeg)" }}
+                    style={{ backgroundImage: "url(/img/ligacamp.jpeg)" }}
                   ></div>
                   <div className="card__content">
                     <p className="card__category">Liga MX</p>
@@ -242,7 +242,7 @@ export default function Home() {
                 <div className="card">
                   <div
                     className="card__background"
-                    style={{ backgroundImage: "url(/img/ligacamp.jpeg)" }}
+                    style={{ backgroundImage: "url(/img/ccame.jpeg)" }}
                   ></div>
                   <div className="card__content">
                     <p className="card__category">Liga MX</p>
