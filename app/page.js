@@ -29,7 +29,7 @@ export default function Home() {
         </div>
 
         <div className={styles.link} onClick={() => goToSection("prensa")}>
-          GALERIA
+          GALERÍA
         </div>
         <div className={styles.link} onClick={() => goToSection("contacto")}>
           CONTACTO
@@ -196,7 +196,7 @@ export default function Home() {
             transition={{ duration: 1.5 }}
             viewport={{ once: true }}
           >
-            <h2>Palmares</h2>
+            <h2>PALMARÉS</h2>
 
             <div className="hero-section">
               <div className="card-grid">
@@ -275,7 +275,7 @@ export default function Home() {
             transition={{ duration: 1.5 }}
             viewport={{ once: true }}
           >
-            <h2>GALERIA</h2>
+            <h2>GALERÍA</h2>
           </motion.div>
           <div className={styles.gallery}>
             <motion.div
@@ -485,7 +485,7 @@ export default function Home() {
             </Link>
           </div>
         </section>
-        <footer>Jorge Sanchez 2023 @ Todos los derechos reservados.</footer>
+        <footer>Jorge Sánchez 2023 @ Todos los derechos reservados.</footer>
       </main>
     </>
   );
