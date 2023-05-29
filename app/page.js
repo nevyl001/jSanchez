@@ -197,79 +197,13 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2>Palmares</h2>
-            {/* <div className="hero-section">
-              <div className="card-grid">
-                <div className="card">
-                  <div
-                    className="card__background"
-                    style={{ backgroundImage: "url(/img/cmx.png)" }}
-                  ></div>
-                  <div className="card__content">
-                    <p className="card__category">Liga MX</p>
-                    <p className="card__heading">Campeón Clausura 2018</p>
-                    <p className="card__heading">Santos Laguna</p>
-                  </div>
-                </div>
-              </div>
-              <div className="card-grid">
-                <div className="card">
-                  <div
-                    className="card__background"
-                    style={{ backgroundImage: "url(/img/lmx.png)" }}
-                  ></div>
-                  <div className="card__content">
-                    <p className="card__category">Liga MX</p>
-                    <p className="card__heading">Campeón Apertura 2018</p>
-                    <p className="card__heading">Club América</p>
-                  </div>
-                </div>
-              </div>
-              <div className="card-grid">
-                <div className="card">
-                  <div
-                    className="card__background"
-                    style={{ backgroundImage: "url(/img/ccn.png)" }}
-                  ></div>
-                  <div className="card__content">
-                    <p className="card__category">Liga MX</p>
-                    <p className="card__heading">Campeón Copa</p>
-                    <p className="card__heading">Club América</p>
-                  </div>
-                </div>
-              </div>
-              <div className="card-grid">
-                <div className="card">
-                  <div
-                    className="card__background"
-                    style={{ backgroundImage: "url(/img/lmx2.png)" }}
-                  ></div>
-                  <div className="card__content">
-                    <p className="card__category">Liga MX</p>
-                    <p className="card__heading">Campeón de Campeones 2019</p>
-                    <p className="card__heading">Club América</p>
-                  </div>
-                </div>
-              </div>
-              <div className="card-grid">
-                <div className="card">
-                  <div
-                    className="card__background"
-                    style={{ backgroundImage: "url(/img/jstokio.png)" }}
-                  ></div>
-                  <div className="card__content">
-                    <p className="card__category">JJOO Tokio</p>
-                    <p className="card__heading">Medalla Bronce 2021</p>
-                    <p className="card__heading">México</p>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+
             <div className="hero-section">
               <div className="card-grid">
                 <div className="card">
                   <div
                     className="card__background"
-                    style={{ backgroundImage: "url(/img/jsantos.webp)" }}
+                    style={{ backgroundImage: "url(/img/sancamp.jpeg)" }}
                   ></div>
                   <div className="card__content">
                     <p className="card__category">Liga MX</p>
@@ -282,7 +216,7 @@ export default function Home() {
                 <div className="card">
                   <div
                     className="card__background"
-                    style={{ backgroundImage: "url(/img/jsame.png)" }}
+                    style={{ backgroundImage: "url(/img/amecapcc.jpeg)" }}
                   ></div>
                   <div className="card__content">
                     <p className="card__category">Liga MX</p>
@@ -295,7 +229,7 @@ export default function Home() {
                 <div className="card">
                   <div
                     className="card__background"
-                    style={{ backgroundImage: "url(/img/jsajaxjue.png)" }}
+                    style={{ backgroundImage: "url(/img/cocacamp.jpeg)" }}
                   ></div>
                   <div className="card__content">
                     <p className="card__category">Liga MX</p>
@@ -308,7 +242,7 @@ export default function Home() {
                 <div className="card">
                   <div
                     className="card__background"
-                    style={{ backgroundImage: "url(/img/jsme.jpeg)" }}
+                    style={{ backgroundImage: "url(/img/ligacamp.jpeg)" }}
                   ></div>
                   <div className="card__content">
                     <p className="card__category">Liga MX</p>
@@ -321,7 +255,7 @@ export default function Home() {
                 <div className="card">
                   <div
                     className="card__background"
-                    style={{ backgroundImage: "url(/img/jsme.jpeg)" }}
+                    style={{ backgroundImage: "url(/img/jstokio.png)" }}
                   ></div>
                   <div className="card__content">
                     <p className="card__category">JJOO Tokio</p>
