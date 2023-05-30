@@ -11,17 +11,7 @@ export default function Home() {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
 
-  const [lightboxController, setLightboxController] = useState({
-    toggler: false,
-    slide: 1,
-  });
-
-  function openLightboxOnSlide(number) {
-    setLightboxController({
-      toggler: !lightboxController.toggler,
-      slide: number,
-    });
-  }
+  const [toggler, setToggler] = useState(false);
 
   return (
     <>
@@ -283,6 +273,7 @@ export default function Home() {
         </section>
 
         <section className={styles.prensa} id="prensa">
+
           <FsLightbox
             toggler={lightboxController.toggler}
             slide={lightboxController.slide}
@@ -354,34 +345,97 @@ export default function Home() {
           />
 
           <section className={styles.prensa} id="prensa">
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+          >
+            <h2>GALERÍA</h2>
+          </motion.div>
+          <div className={styles.gallery}>
+
+            
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1.5 }}
               viewport={{ once: true }}
             >
-              <h2>GALERÍA</h2>
+              <div className={styles.principal}>
+                <Image
+                  src="/img/gallery-1.jpg"
+                  width={2048}
+                  height={1365}
+                  alt="Jorge Sanchez - Galeria"
+                />
+              </div>
             </motion.div>
-            <div className={styles.gallery}>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1.5 }}
-                viewport={{ once: true }}
-              >
-                <div
-                  className={styles.principal}
-                  onClick={() => openLightboxOnSlide(1)}
+            <div className={styles.divider} />
+            <div className={styles.photos}>
+              <div className={styles.photo}>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1.5 }}
+                  viewport={{ once: true }}
                 >
                   <Image
-                    src="/img/gallery-1.jpg"
-                    width={2048}
-                    height={1365}
+                    src="/img/gallery-2.jpg"
+                    width={1066}
+                    height={1600}
                     alt="Jorge Sanchez - Galeria"
                   />
-                </div>
-              </motion.div>
-              <div className={styles.divider} />
+                </motion.div>
+              </div>
+              <div className={styles.photo}>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1.5, delay: 0.3 }}
+                  viewport={{ once: true }}
+                >
+                  <Image
+                    src="/img/gallery-3.jpg"
+                    width={1066}
+                    height={1600}
+                    alt="Jorge Sanchez - Galeria"
+                  />
+                </motion.div>
+              </div>
+              <div className={styles.photo}>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1.5, delay: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <Image
+                    src="/img/gallery-4.jpg"
+                    width={1066}
+                    height={1600}
+                    alt="Jorge Sanchez"
+                  />
+                </motion.div>
+              </div>
+              <div className={styles.photo}>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1.5, delay: 0.9 }}
+                  viewport={{ once: true }}
+                >
+                  <Image
+                    src="/img/gallery-5.jpg"
+                    width={1066}
+                    height={1600}
+                    alt="Jorge Sanchez"
+                  />
+                </motion.div>
+              </div>
+            </div>
+            <div className={styles.pho2}>
               <div className={styles.photos}>
                 <div className={styles.photo}>
                   <motion.div
@@ -390,14 +444,12 @@ export default function Home() {
                     transition={{ duration: 1.5 }}
                     viewport={{ once: true }}
                   >
-                    <div onClick={() => openLightboxOnSlide(2)}>
-                      <Image
-                        src="/img/gallery-2.jpg"
-                        width={1066}
-                        height={1600}
-                        alt="Jorge Sanchez - Galeria"
-                      />
-                    </div>
+                    <Image
+                      src="/img/n1.png"
+                      width={1920}
+                      height={1080}
+                      alt="Jorge Sanchez - Galeria"
+                    />
                   </motion.div>
                 </div>
                 <div className={styles.photo}>
@@ -407,16 +459,18 @@ export default function Home() {
                     transition={{ duration: 1.5, delay: 0.3 }}
                     viewport={{ once: true }}
                   >
-                    <div onClick={() => openLightboxOnSlide(3)}>
-                      <Image
-                        src="/img/gallery-3.jpg"
-                        width={1066}
-                        height={1600}
-                        alt="Jorge Sanchez - Galeria"
-                      />
-                    </div>
+                    <Image
+                      src="/img/n2.png"
+                      width={1920}
+                      height={1080}
+                      alt="Jorge Sanchez - Galeria"
+                    />
                   </motion.div>
                 </div>
+              </div>
+            </div>
+            <div className={styles.pho3}>
+              <div className={styles.photos}>
                 <div className={styles.photo}>
                   <motion.div
                     initial={{ opacity: 0 }}
@@ -424,14 +478,12 @@ export default function Home() {
                     transition={{ duration: 1.5, delay: 0.6 }}
                     viewport={{ once: true }}
                   >
-                    <div onClick={() => openLightboxOnSlide(4)}>
-                      <Image
-                        src="/img/gallery-4.jpg"
-                        width={1066}
-                        height={1600}
-                        alt="Jorge Sanchez"
-                      />
-                    </div>
+                    <Image
+                      src="/img/n3.png"
+                      width={1920}
+                      height={1080}
+                      alt="Jorge Sanchez"
+                    />
                   </motion.div>
                 </div>
                 <div className={styles.photo}>
@@ -441,95 +493,17 @@ export default function Home() {
                     transition={{ duration: 1.5, delay: 0.9 }}
                     viewport={{ once: true }}
                   >
-                    <div onClick={() => openLightboxOnSlide(5)}>
-                      <Image
-                        src="/img/gallery-5.jpg"
-                        width={1066}
-                        height={1600}
-                        alt="Jorge Sanchez"
-                      />
-                    </div>
+                    <Image
+                      src="/img/n4.png"
+                      width={1920}
+                      height={1080}
+                      alt="Jorge Sanchez"
+                    />
                   </motion.div>
                 </div>
               </div>
-              <div className={styles.pho2}>
-                <div className={styles.photos}>
-                  <div className={styles.photo}>
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{ duration: 1.5 }}
-                      viewport={{ once: true }}
-                    >
-                      <div onClick={() => openLightboxOnSlide(6)}>
-                        <Image
-                          src="/img/n1.png"
-                          width={1920}
-                          height={1080}
-                          alt="Jorge Sanchez - Galeria"
-                        />
-                      </div>
-                    </motion.div>
-                  </div>
-                  <div className={styles.photo}>
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{ duration: 1.5, delay: 0.3 }}
-                      viewport={{ once: true }}
-                    >
-                      <div onClick={() => openLightboxOnSlide(7)}>
-                        <Image
-                          src="/img/n2.png"
-                          width={1920}
-                          height={1080}
-                          alt="Jorge Sanchez - Galeria"
-                        />
-                      </div>
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.pho3}>
-                <div className={styles.photos}>
-                  <div className={styles.photo}>
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{ duration: 1.5, delay: 0.6 }}
-                      viewport={{ once: true }}
-                    >
-                      <div onClick={() => openLightboxOnSlide(8)}>
-                        <Image
-                          src="/img/n3.png"
-                          width={1920}
-                          height={1080}
-                          alt="Jorge Sanchez"
-                        />
-                      </div>
-                    </motion.div>
-                  </div>
-                  <div className={styles.photo}>
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{ duration: 1.5, delay: 0.9 }}
-                      viewport={{ once: true }}
-                    >
-                      <div onClick={() => openLightboxOnSlide(9)}>
-                        <Image
-                          src="/img/n4.png"
-                          width={1920}
-                          height={1080}
-                          alt="Jorge Sanchez"
-                        />
-                      </div>
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </section>
+          </div>
         </section>
         <section className={styles.imgnike}>
           <motion.div
