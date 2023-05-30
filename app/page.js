@@ -288,54 +288,63 @@ export default function Home() {
             slide={lightboxController.slide}
             sources={[
               <Image
+                key="1"
                 src="/img/gallery-1.jpg"
                 width={2048}
                 height={1365}
                 alt="Jorge Sanchez - Galeria"
               />,
               <Image
+                key="2"
                 src="/img/gallery-2.jpg"
                 width={1066}
                 height={1600}
                 alt="Jorge Sanchez - Galeria"
               />,
               <Image
+                key="3"
                 src="/img/gallery-3.jpg"
                 width={1066}
                 height={1600}
                 alt="Jorge Sanchez - Galeria"
               />,
               <Image
+                key="4"
                 src="/img/gallery-4.jpg"
                 width={1066}
                 height={1600}
                 alt="Jorge Sanchez"
               />,
               <Image
+                key="5"
                 src="/img/gallery-5.jpg"
                 width={1066}
                 height={1600}
                 alt="Jorge Sanchez"
               />,
               <Image
+                key="6"
                 src="/img/n1.png"
                 width={1920}
                 height={1080}
                 alt="Jorge Sanchez - Galeria"
               />,
               <Image
+                key="7"
                 src="/img/n2.png"
                 width={1920}
                 height={1080}
                 alt="Jorge Sanchez - Galeria"
               />,
               <Image
+                key="8"
                 src="/img/n3.png"
                 width={1920}
                 height={1080}
                 alt="Jorge Sanchez"
               />,
               <Image
+                key="9"
                 src="/img/n4.png"
                 width={1920}
                 height={1080}
