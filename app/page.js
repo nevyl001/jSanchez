@@ -352,7 +352,6 @@ export default function Home() {
               />,
             ]}
           />
-
           <section className={styles.prensa} id="prensa">
             <motion.div
               initial={{ opacity: 0 }}
