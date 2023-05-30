@@ -103,35 +103,35 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2>BIO</h2>
-            <div class="row1-container">
-              <div class="box box-down">
-                <div class="title">
+            <div className="row1-container">
+              <div className="box box-down">
+                <div className="title">
                   <h4>Número:</h4>
                 </div>
                 <p>19</p>
               </div>
-              <div class="box red">
-                <div class="title">
+              <div className="box red">
+                <div className="title">
                   <h4>Lugar de nacimiento:</h4>
                 </div>
                 <p>Torreón, Coahuila</p>
               </div>
-              <div class="box box-down">
-                <div class="title">
+              <div className="box box-down">
+                <div className="title">
                   <h4>Posición:</h4>
                 </div>
                 <p>Lateral Derecho</p>
               </div>
             </div>
-            <div class="row2-container">
-              <div class="box">
-                <div class="title">
+            <div className="row2-container">
+              <div className="box">
+                <div className="title">
                   <h4>Fecha de nacimiento:</h4>
                 </div>
                 <p>10 de diciembre, 1997</p>
               </div>
-              <div class="box">
-                <div class="title">
+              <div className="box">
+                <div className="title">
                   <h4>Estatura:</h4>
                 </div>
                 <p>1.75 m</p>
@@ -530,6 +530,7 @@ export default function Home() {
             </div>
           </section>
         </section>
+
         <section className={styles.imgnike}>
           <motion.div
             initial={{ opacity: 0 }}
@@ -589,6 +590,7 @@ export default function Home() {
             </Link>
           </div>
         </section>
+
         <footer>Jorge Sánchez 2023 @ Todos los derechos reservados.</footer>
       </main>
     </>
