@@ -89,8 +89,8 @@ export default function Home() {
         >
           <section className={styles.frase}>
             <h3>
-              "CADA OBSTÁCULO SUPERADO ES UN ESCALÓN MÁS CERCA DE LA GRANDEZA."
-              - Jorge Sánchez
+              &quot;CADA OBSTÁCULO SUPERADO ES UN ESCALÓN MÁS CERCA DE LA
+              GRANDEZA.&quot; - Jorge Sánchez
             </h3>
           </section>
         </motion.div>
