@@ -89,9 +89,8 @@ export default function Home() {
         >
           <section className={styles.frase}>
             <h3>
-              “EL FÚTBOL ES UN JUEGO QUE SE JUEGA CON EL CEREBRO. DEBES ESTAR EN
-              EL LUGAR ADECUADO, EN EL MOMENTO ADECUADO. NI DEMASIADO PRONTO NI
-              DEMASIADO TARDE.” - Johan Cruyff
+              "CADA OBSTÁCULO SUPERADO ES UN ESCALÓN MÁS CERCA DE LA GRANDEZA."
+              - Jorge Sánchez
             </h3>
           </section>
         </motion.div>
