@@ -74,9 +74,9 @@ export default function Home() {
         >
           <section className={styles.mainPhoto}>
             <Image
-              src="/img/photo-1.jpg"
-              width={1280}
-              height={1600}
+              src="/img/j6p.jpg"
+              width={6000}
+              height={4000}
               alt="Jorge Sanchez"
             />
           </section>
@@ -181,7 +181,20 @@ export default function Home() {
                   <div className="card__content">
                     <p className="card__category">La Eredivisie</p>
                     <h3 className="card__heading">Ajax FC</h3>
-                    <h3 className="card__heading">2022 -</h3>
+                    <h3 className="card__heading">2022 - 2023</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/j3p.jpg)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">Primera Liga</p>
+                    <h3 className="card__heading">Porto FC</h3>
+                    <h3 className="card__heading">2023 -</h3>
                   </div>
                 </div>
               </div>
@@ -323,27 +336,55 @@ export default function Home() {
               />,
               <Image
                 key="6"
+                src="/img/j1p.jpg"
+                width={6000}
+                height={4000}
+                alt="Jorge Sanchez"
+              />,
+              <Image
+                key="7"
+                src="/img/j2p.jpg"
+                width={6000}
+                height={4000}
+                alt="Jorge Sanchez"
+              />,
+              <Image
+                key="8"
+                src="/img/j3p.jpg"
+                width={6000}
+                height={4000}
+                alt="Jorge Sanchez"
+              />,
+              <Image
+                key="9"
+                src="/img/j4p.jpg"
+                width={6000}
+                height={4000}
+                alt="Jorge Sanchez"
+              />,
+              <Image
+                key="10"
                 src="/img/n1.png"
                 width={1920}
                 height={1080}
                 alt="Jorge Sanchez - Galeria"
               />,
               <Image
-                key="7"
+                key="11"
                 src="/img/n2.png"
                 width={1920}
                 height={1080}
                 alt="Jorge Sanchez - Galeria"
               />,
               <Image
-                key="8"
+                key="12"
                 src="/img/n3.png"
                 width={1920}
                 height={1080}
                 alt="Jorge Sanchez"
               />,
               <Image
-                key="9"
+                key="13"
                 src="/img/n4.png"
                 width={1920}
                 height={1080}
@@ -431,6 +472,7 @@ export default function Home() {
                   </div>
                 </motion.div>
               </div>
+
               <div className={styles.photo}>
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -449,6 +491,80 @@ export default function Home() {
                 </motion.div>
               </div>
             </div>
+            <div className={styles.divider} />
+            <div className={styles.photos}>
+              <div className={styles.photo}>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1.5 }}
+                  viewport={{ once: true }}
+                >
+                  <div onClick={() => openLightboxOnSlide(6)}>
+                    <Image
+                      src="/img/j1p.jpg"
+                      width={6000}
+                      height={4000}
+                      alt="Jorge Sanchez - Galeria"
+                    />
+                  </div>
+                </motion.div>
+              </div>
+              <div className={styles.photo}>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1.5, delay: 0.3 }}
+                  viewport={{ once: true }}
+                >
+                  <div onClick={() => openLightboxOnSlide(7)}>
+                    <Image
+                      src="/img/j2p.jpg"
+                      width={6000}
+                      height={4000}
+                      alt="Jorge Sanchez - Galeria"
+                    />
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+            <div className={styles.divider} />
+            <div className={styles.photos}>
+              <div className={styles.photo}>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1.5, delay: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <div onClick={() => openLightboxOnSlide(8)}>
+                    <Image
+                      src="/img/j3p.jpg"
+                      width={6000}
+                      height={4000}
+                      alt="Jorge Sanchez"
+                    />
+                  </div>
+                </motion.div>
+              </div>
+              <div className={styles.photo}>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1.5, delay: 0.9 }}
+                  viewport={{ once: true }}
+                >
+                  <div onClick={() => openLightboxOnSlide(9)}>
+                    <Image
+                      src="/img/j4p.jpg"
+                      width={6000}
+                      height={4000}
+                      alt="Jorge Sanchez"
+                    />
+                  </div>
+                </motion.div>
+              </div>
+            </div>
             <div className={styles.pho2}>
               <div className={styles.photos}>
                 <div className={styles.photo}>
@@ -458,7 +574,7 @@ export default function Home() {
                     transition={{ duration: 1.5 }}
                     viewport={{ once: true }}
                   >
-                    <div onClick={() => openLightboxOnSlide(6)}>
+                    <div onClick={() => openLightboxOnSlide(10)}>
                       <Image
                         src="/img/n1.png"
                         width={1920}
@@ -475,7 +591,7 @@ export default function Home() {
                     transition={{ duration: 1.5, delay: 0.3 }}
                     viewport={{ once: true }}
                   >
-                    <div onClick={() => openLightboxOnSlide(7)}>
+                    <div onClick={() => openLightboxOnSlide(11)}>
                       <Image
                         src="/img/n2.png"
                         width={1920}
@@ -496,7 +612,7 @@ export default function Home() {
                     transition={{ duration: 1.5, delay: 0.6 }}
                     viewport={{ once: true }}
                   >
-                    <div onClick={() => openLightboxOnSlide(8)}>
+                    <div onClick={() => openLightboxOnSlide(12)}>
                       <Image
                         src="/img/n3.png"
                         width={1920}
@@ -513,7 +629,7 @@ export default function Home() {
                     transition={{ duration: 1.5, delay: 0.9 }}
                     viewport={{ once: true }}
                   >
-                    <div onClick={() => openLightboxOnSlide(9)}>
+                    <div onClick={() => openLightboxOnSlide(13)}>
                       <Image
                         src="/img/n4.png"
                         width={1920}
