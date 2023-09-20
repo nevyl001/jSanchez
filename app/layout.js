@@ -6,7 +6,7 @@ export const metadata = {
   title: "Jorge Sanchez",
   description: "Sitio oficial del jugador mexicano de futbol Jorge Sanchez",
   openGraph: {
-    images: "/og-image.png",
+    images: "/img/og-image.png",
   },
 };
 
