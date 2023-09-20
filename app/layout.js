@@ -2,7 +2,7 @@ import Head from "next/head";
 import "./globals.css";
 
 export const metadata = {
-  metadataBase: new URL("https://j-sanchez.vercel.app"),
+  metadataBase: new URL("https://www.jorgesanchez4.com"),
   title: "Jorge Sanchez",
   description: "Sitio oficial del jugador mexicano de futbol Jorge Sanchez",
   openGraph: {
