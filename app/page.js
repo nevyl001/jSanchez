@@ -376,20 +376,6 @@ export default function Home() {
                 height={1080}
                 alt="Jorge Sanchez - Galeria"
               />,
-              <Image
-                key="12"
-                src="/img/n3.png"
-                width={1920}
-                height={1080}
-                alt="Jorge Sanchez"
-              />,
-              <Image
-                key="13"
-                src="/img/n4.png"
-                width={1920}
-                height={1080}
-                alt="Jorge Sanchez"
-              />,
             ]}
           />
           <motion.div
