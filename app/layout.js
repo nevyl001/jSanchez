@@ -11,7 +11,7 @@ export const metadata = {
     url: "https://www.jorgesanchez4.com",
     title: "Jorge Sanchez",
     description: "Sitio oficial del jugador mexicano de futbol Jorge Sanchez",
-    images: "/img/og-image.jpg",
+    images: "/img/meta-2.jpg",
   },
 };
 
