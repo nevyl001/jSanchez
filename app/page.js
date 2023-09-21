@@ -107,7 +107,7 @@ export default function Home() {
                 <div className="title">
                   <h4>Número:</h4>
                 </div>
-                <p>19</p>
+                <p>15</p>
               </div>
               <div className="box red">
                 <div className="title">
