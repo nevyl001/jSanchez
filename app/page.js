@@ -264,6 +264,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="hero-section">
               <div className="card-grid">
                 <div className="card">
                   <div
@@ -286,6 +288,19 @@ export default function Home() {
                   <div className="card__content">
                     <p className="card__category">JJOO Tokio</p>
                     <h3 className="card__heading">Medalla Bronce 2021</h3>
+                    <h3 className="card__heading">México</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="card-grid">
+                <div className="card">
+                  <div
+                    className="card__background"
+                    style={{ backgroundImage: "url(/img/CoOCamp.jpeg)" }}
+                  ></div>
+                  <div className="card__content">
+                    <p className="card__category">Copa De Oro 2023</p>
+                    <h3 className="card__heading">Campeón</h3>
                     <h3 className="card__heading">México</h3>
                   </div>
                 </div>
